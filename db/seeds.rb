@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+person = Theme.create(name: "person")
+films = Theme.create(name: "films")
+spaceships = Theme.create(name: "spaceships")
+species = Theme.create(name: "species")
+vehicles = Theme.create(name: "vehicles")
+planets = Theme.create(name: "planets")
