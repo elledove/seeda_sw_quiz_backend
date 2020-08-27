@@ -31,7 +31,7 @@ NOW WE'RE READY TO CODE (BUT JUST OUR MODELS — NO CONTROLLERS OR SERIALIZERS Y
 
 NOTE: Remember to VERTICALLY build your MVP! This means building out one model/feature at a time. DO NOT build out all the models and controllers at the same time. This is the easiest way to get lost in your project very early. Read more about this here.
 
- {}8. Build your models
+ {X}8. Build your models
 Migrations
 Model classes
 Associations

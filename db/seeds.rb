@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Theme.destroy_all
+Question.destroy_all
+Answer.destroy_all
 
 person = Theme.create(name: "person")
 films = Theme.create(name: "films")
@@ -22,7 +25,7 @@ q4 = Question.create(a_question: "What species is Jabba Desilijic Tiure?", theme
 q5 = Question.create(a_question: "What planet was Anakin discovered on?", theme_id: planets.id)
 
 
-Answer.create(an_answer: "Anakin",question_id: q1.id)
+Answer.create(an_answer: "Anakin",question: q1)
 Answer.create(an_answer: "A New Hope, 1977",question_id: q2.id)
 Answer.create(an_answer: "The Millenium Falcon",question_id: q3.id)
 Answer.create(an_answer: "Huttanese",question_id: q4.id)
