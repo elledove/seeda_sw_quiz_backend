@@ -1,7 +1,8 @@
 class Api::QuestionsController < ApplicationController
     def index
         questions = Question.all
-        render json: questions
+        #render json: questions <-- used to render before installing fastJSON serializer
+        render json: QuestionSerializer.new(questions)
     end
 
 
