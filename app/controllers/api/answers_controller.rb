@@ -2,7 +2,8 @@ class Api::AnswersController < ApplicationController
 
     def index
         answers  = Answer.all 
-        render json: answers
+        #render json: answers
+        render json: AnswerSerializer.new(answers)
     end
 
 
@@ -13,7 +14,8 @@ class Api::AnswersController < ApplicationController
         else
             render {answer.errors.full_message}
 
-
+        end
+    end
 
 
             private
